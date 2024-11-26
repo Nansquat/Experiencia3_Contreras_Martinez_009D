@@ -1,0 +1,51 @@
+ion-toolbar{
+    --background:rgba(205, 224, 241, 0.846);
+    --color: #c91d12;
+}
+
+#titulo{
+    color: rgba(123, 4, 4, 0.763); 
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#foto{
+    margin-top: 25%;
+    --background:rgba(205, 224, 241, 0.846);
+    padding-top:10px;
+    --max-width:100%;
+    --height:auto;
+}
+#centrar{
+    text-align: center;
+}
+.boton{
+    --background: #b23e14;
+    --background-hover: #a14427;
+    --background-activated: #88aaf4;
+    --background-focused: #e6c9e6;
+    --color: #000;
+    --border-radius: 20px;
+    --border-color: #000;
+    --border-style: solid;
+    --border-width: 1px;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+    --text-align:center;
+    font-family: "Times New Roman", Times, serif;
+    --opacity: 0.85;
+    --transition: 0.3s;
+}
+.boton:hover{
+    --opacity:1;
+}
+#torch1{
+    text-align: center;
+    font-size: auto;
+    color: rgba(123, 4, 4, 0.763); 
+    font-weight: bold;
+}
+#desc{
+    text-align: center;
+    color: #a14427;
+}

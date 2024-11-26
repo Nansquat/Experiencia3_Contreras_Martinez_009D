@@ -1,0 +1,116 @@
+ion-toolbar {
+    --background: rgba(205, 224, 241, 0.846);
+    --color: #c91d12;
+  
+    --border-color: rgba(205, 224, 241, 0.846);
+    --border-width: 4px 0;
+    --border-style: double;
+  }
+
+#desc{
+      margin-top: 15%;
+    --background:rgba(205, 224, 241, 0.846);
+    --max-width:100%;
+    --height:auto;
+}
+#act{
+  color: rgba(123, 4, 4, 0.763); 
+    font-weight: bold;
+    font-size: 20px;
+}
+#titpag{
+    text-align: center;
+    font-size: auto;
+    color: rgba(123, 4, 4, 0.763); 
+    font-weight: bold;
+    padding-top: 10px;
+}
+#actdesc{
+    text-align: center;
+    color: #a14427;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+}
+.actimg{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  opacity: 0.85;
+  padding-bottom: 10px;
+}
+.act{
+      margin-top: 5%;
+    --background:rgba(205, 224, 241, 0.846);
+    --max-width:100%;
+    --height:auto;
+}
+.titact{
+  text-align: center;
+  font-size: auto;
+  color: rgba(123, 4, 4, 0.763); 
+  font-weight: bold;
+  padding-top: 10px;
+}
+.p1{
+  color: #7c4939;
+  opacity: 0.8;
+  font-size: small;
+  font-family: "Times New Roman", Times, serif;
+}
+.p2{
+  color: #7c4939;
+  opacity: 0.9;
+  font-size: small;
+  font-family: "Times New Roman", Times, serif;
+}
+.p3{
+    text-align: center;
+    color: #a14427;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+}
+.bpart{
+    --background: #b23e14;
+    --background-hover: #a14427;
+    --background-activated: #88aaf4;
+    --background-focused: #e6c9e6;
+    --color: #000; 
+    --border-radius: 20px;
+    --border-color: #000;
+    --border-style: solid;
+    --border-width: 1px;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+    --text-align:center;
+    --font-style:italic;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    display: block !important;
+    --opacity: 0.8;
+    --transition: 0.2s;
+    width: 80%;
+}
+.bpart:hover{
+  --opacity: 1;
+}
+.sem{
+  margin-top: 5%;
+--background:rgba(205, 224, 241, 0.846);
+--max-width:100%;
+--height:auto;
+}
+.eve{
+  margin-top: 5%;
+--background:rgba(205, 224, 241, 0.846);
+--max-width:100%;
+--height:auto;
+}
+.tall{
+  margin-top: 5%;
+--background:rgba(205, 224, 241, 0.846);
+--max-width:100%;
+--height:auto;
+}

@@ -1,0 +1,32 @@
+{
+    "usuarios":[
+    {
+        "id":"1",
+        "nomusuario":"hodwy123",
+        "password":"powder1234",
+        "correo":"gatohick@mail.com",
+        "fechanac":"12-02-1999"
+    },
+    {
+        "id":"2",
+        "nomusuario":"julepe",
+        "password":"pestos12",
+        "correo":"perros@mail.com",
+        "fechanac":"22-07-1991"
+    },
+    {
+        "id":"3",
+        "nomusuario":"sacramento",
+        "password":"hola1234",
+        "correo":"caninos@mail.com",
+        "fechanac":"12-02-1989"
+    },
+    {
+        "id":"4",
+        "nomusuario":"levantapolvo",
+        "password":"desierto345",
+        "correo":"gatoverde@mail.com",
+        "fechanac":"12-02-1996"
+    }
+    ]
+}

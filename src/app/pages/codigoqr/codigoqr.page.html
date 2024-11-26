@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        defaultHref="/"
+        text=""
+        color="danger">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title id="qr">Generar Código QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card id="descqr">
+    <ion-card-title id="titqr">Generación de código QR</ion-card-title>
+      <ion-card-content> <!--npm install ngx-qrcode2-->
+        <p id="qrdesc"> Aquí se generará un código QR
+        </p>
+        <ion-input id="qrlabel" label="Escriba texto: " labelPlacement="floating" 
+        color="danger" type="text" placeholder="Texto que generará QR"></ion-input>
+      </ion-card-content>
+      <div>
+        <ion-button class="bqr"(click)="generarQR()">Generar QR</ion-button>
+      </div>
+      <div class="qrimg">
+        <ion-img src="assets/qr_code.jpg"></ion-img>
+      </div>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Torchline © 2024</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
