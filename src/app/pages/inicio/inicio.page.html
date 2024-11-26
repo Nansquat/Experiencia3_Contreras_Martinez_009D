@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="end" name="menu-outline" color="danger"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title id="titulo">Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-content [fullscreen]="true">
+    <ion-card id="foto">
+      <ion-card-title id="torch1">Torchrelay</ion-card-title>
+        <ion-card-content>
+          <p id="desc">Como Escuela de Informática y Telecomunicaciones presentamos el proyecto 
+            <strong>Torchrelay</strong>, plataforma creada para los gestores y validadores de eventos de la escuela, 
+            esta tiene como finalidad facilitar la gestión y registro de eventos, seminarios, actividades y/o talleres 
+            y así publicarlos para el conjunto estudiantil de nuestra escuela.</p>
+        </ion-card-content>
+        <ion-img src="assets/torch_main.jpg"></ion-img>
+    </ion-card>
+    <div id="centrar">
+      <ion-button (click)="mensaje1()" fill="solid" shape="round" class="boton">
+        Iniciar Sesión
+      </ion-button>
+    </div>
+    <div id="centrar">
+      <ion-button (click)="mensaje2()" fill="solid" shape="round" class="boton">
+        Regístrate
+      </ion-button>
+    </div>
+  </ion-content>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Torchrelay © 2024</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

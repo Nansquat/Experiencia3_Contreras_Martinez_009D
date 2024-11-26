@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        defaultHref="/"
+        text=""
+        color="danger">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title id="login">Inicio de Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" class="contentlogin">
+  <ion-card card="cartalogin">
+    <ion-card-title class="ictitle">Iniciar Sesión</ion-card-title>
+      <ion-card-content>
+        <ion-list>
+            <ion-item>
+              <ion-input label="Nombre de usuario: " labelPlacement="floating" color="danger" type="text" placeholder="Escribe tu nombre de usuario"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input label="Contraseña: " labelPlacement="floating" color="danger" type="password" placeholder="Escribe tu contraseña"></ion-input>
+            </ion-item>     
+        </ion-list>
+      </ion-card-content>
+      <div>
+        <ion-button class="blogin" (click)="inicioSesion()">Login</ion-button>
+      </div>  
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Torchrelay © 2024</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

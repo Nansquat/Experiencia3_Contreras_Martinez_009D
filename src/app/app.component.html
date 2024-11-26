@@ -1,0 +1,21 @@
+<ion-app>
+  <ion-menu contentId="main" menuId="first" side="start" type="overlay">
+    <ion-header mode="md" class="ion-no-border">
+      <ion-toolbar mode="md">
+        <ion-icon slot="start" size="large" name="grid" style="padding-left:10px" class="ico"></ion-icon>
+        <ion-title>Menú</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle *ngFor="let m of opciones" class="elemental">
+          <ion-item [routerLink]="m.redirecTo" detail="true" class="elemental">
+            <ion-icon slot="start" [name]="m.icon" class="ico"></ion-icon>
+            <ion-label class="elemental">{{m.name}}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        defaultHref="/"
+        text=""
+        color="danger">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title id="crear">Crear Actividad</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="contentcrear">
+  <ion-card class="cartacrear">
+    <ion-card-title class="ictitle">Nueva actividad</ion-card-title>
+      <ion-card-content>
+        <ion-list>
+            <ion-item>
+              <ion-input label="Título de actividad: " labelPlacement="floating" color="danger" type="text" placeholder="Título de la actividad a crear"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input label="Fecha de actividad: " labelPlacement="floating" color="danger" type="date" placeholder="Introducir fecha de la actividad"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-textarea label="Descripción de actividad: " labelPlacement="floating" color="danger" placeholder="Describa la actividad"></ion-textarea>
+            </ion-item>
+            <ion-item>
+              <ion-input disabled="true" label="Imagen adjunta a la actividad: " labelPlacement="floating" color="danger" type="url" required="false" placeholder="Inserte imagen"></ion-input>
+              <div>
+                <ion-img id="icoat" src="assets/picture-attachment-512.ico"></ion-img>
+              </div> 
+            </ion-item>
+        </ion-list>
+      </ion-card-content>
+      <div>
+        <ion-button class="bcrear" (click)="crearAct()">Crear</ion-button>
+      </div>  
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Torchrelay © 2024</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

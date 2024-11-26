@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        defaultHref="/"
+        text=""
+        color="danger">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title id="registro">Registro de Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="contentregistro">
+  <ion-card class="cartaregistro">
+    <ion-card-title class="ictitle">Registrar nuevo usuario</ion-card-title>
+      <ion-card-content>
+        <ion-list>
+            <ion-item>
+              <ion-input label="Nombre de usuario: " labelPlacement="floating" color="danger" type="text" placeholder="Escriba su nombre de usuario"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input label="Contraseña: " labelPlacement="floating" color="danger" type="password" placeholder="Escriba su contraseña"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input label="Correo electrónico: " labelPlacement="floating" color="danger" type="email" placeholder="Escriba su correo electrónico"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input label="Fecha de Nacimiento: " labelPlacement="floating" color="danger" type="date" placeholder="Introduce tu fecha de nacimiento"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input label="Cargo: " labelPlacement="floating" color="danger" type="text" placeholder="Especifique su cargo"></ion-input>
+            </ion-item>
+        </ion-list>
+      </ion-card-content>
+      <div>
+        <ion-button class="bregistro" (click)="registroUsuario()">Registrarse</ion-button>
+      </div>  
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Torchrelay © 2024</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
