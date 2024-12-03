@@ -1,0 +1,31 @@
+ion-toolbar {
+    --background: rgba(205, 224, 241, 0.846);
+    --color: #c91d12;
+  
+    --border-color: rgba(205, 224, 241, 0.846);
+    --border-width: 4px 0;
+    --border-style: double;
+  
+    --min-height: 80px;
+    --padding-top: 20px;
+    --padding-bottom: 20px;
+  }
+.elemental{
+    --background: rgba(205, 224, 241, 0.846);
+    --color: #c91d12;
+}
+.ico{
+    color: rgba(123, 4, 4, 0.763); 
+}
+ion-menu::part(backdrop) {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+  
+  ion-menu::part(container) {
+    border-radius: 0 20px 20px 0;
+  
+    box-shadow: 4px 0px 16px rgba(197, 19, 43, 0.785);
+  }
+  .list-md .item-input:first-child{
+    border-bottom : none
+ }

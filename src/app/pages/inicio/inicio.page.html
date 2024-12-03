@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="end" name="menu-outline" color="danger"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title id="titulo">Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card id="foto">
+    <ion-card-title id="torch1">Torchline</ion-card-title>
+      <ion-card-content>
+        <p id="desc">Como Escuela de Informática y Telecomunicaciones presentamos el proyecto 
+          <strong>Torchline</strong>, el cual tiene como finalidad facilitar el registro
+          de los estudiantes en una plataforma que les permitirá enlistarse para la 
+          participación de eventos, actividades y/o seminarios organizados para las diversas
+          carreras que integran dicha escuela.
+        </p>
+      </ion-card-content>
+      <ion-img src="assets/torch_icon.jpg"></ion-img>
+      <!--
+      <br>
+      <br>
+      <h1>Carrusel</h1>
+      <app-carousel [images]="images"></app-carousel>
+      <h1>Auto Slide</h1>
+      <app-carousel [images]="images"[autoSlide]="true"></app-carousel>
+      <br>
+      <br>
+      <h1>Auto Slide with custom interval</h1>
+      <app-carousel [images]="images"[autoSlide]="true" [slideInterval]="1000"></app-carousel>
+      <br>
+      <br>
+      <h1>Hide dot indicators</h1>
+      <app-carousel [images]="images"[indicators]="false"></app-carousel>
+      <br>
+      <br>
+      <h1>Hide button controls</h1>
+      <app-carousel [images]="images"[controls]="false"></app-carousel>
+      -->
+      
+  </ion-card>
+  <div id="centrar">
+    <ion-button (click)="mensaje1()" fill="solid" shape="round" class="boton">
+      Iniciar Sesión
+    </ion-button>
+  </div>
+  <div id="centrar">
+    <ion-button (click)="mensaje2()" fill="solid" shape="round" class="boton">
+      Regístrate
+    </ion-button>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Torchline © 2024</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

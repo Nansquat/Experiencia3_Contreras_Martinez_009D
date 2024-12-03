@@ -1,0 +1,142 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        defaultHref="/"
+        text=""
+        color="danger">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title id="act">Actividades</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-card id="desc">
+      <ion-card-title id="titpag">Registro de actividades, eventos, talleres y seminarios.</ion-card-title>
+        <ion-card-content>
+          <p id="actdesc">En esta página se lleva el registro de las diversas 
+            actividades que actualmente se encuentran programadas por la 
+            escuela de Informática y Telecomunicaciones, aquí como usuario podrás participar
+            en cualquiera de las actividades registradas a continuación, siempre y cuando hayas
+            iniciado sesión en nuestra plataforma.
+          </p>
+        </ion-card-content>
+        <div class="actimg">
+          <ion-img src="assets/act_torch.jpg"></ion-img>
+        </div>
+    </ion-card>
+  </div>
+  <div>
+    <ion-card class="act">
+      <ion-card-title class="titact">Actividad: Torneo de cartas Mito</ion-card-title>
+        <ion-card-content>
+          <p class="p1">Publicado el: 29 de Agosto, 2024</p>
+          <p class="p2">Fecha de Actividad: Miércoles 25 de Septiembre <br> Horario: 9:00 a 17:00</p>
+          <p class="p3">Únete a esta entretenida actividad si te sientes capaz de medirte con los mejores
+                        jugadores de la escuela, siempre y cuando tengas una cuenta en nuestra plataforma 
+                        podrás participar (cupos limitados).</p>
+        </ion-card-content>
+        <div class="actimg">
+          <ion-img src="assets/act_mito.jpg"></ion-img>
+        </div>
+        <ion-button (click)="act1()" fill="solid" shape="round" class="bpart">
+          Participar
+        </ion-button>
+    </ion-card>
+  </div>
+  <div>
+    <ion-card class="act">
+      <ion-card-title class="titact">Actividad: Pruebas físicas</ion-card-title>
+        <ion-card-content>
+          <p class="p1">Publicado el: 2 de Septiembre, 2024</p>
+          <p class="p2">Fecha de Actividad: Lunes 23 de Septiembre <br> Horario: 10:00 a 14:00</p>
+          <p class="p3">Anímate en esta actividad que probará tus capacidades físicas por medio
+            de estaciones de ejercicios, cada estación contendrá un tiempo límite y habrán premios, desde
+            mouse gamers hasta suplementos de ejercicio. <strong>Prueba que no perteneces al común denominador 
+              informático!.</strong></p>
+        </ion-card-content>
+        <div class="actimg">
+          <ion-img src="assets/fit_nerd.avif"></ion-img>
+        </div>
+        <ion-button (click)="act2()" fill="solid" shape="round" class="bpart">
+          Participar
+        </ion-button>
+    </ion-card>
+  </div>
+  <div>
+    <ion-card class="sem">
+      <ion-card-title class="titact">Seminario: Charla online Ciencia de Datos, Estadísticas e Influencia en el mercado</ion-card-title>
+        <ion-card-content>
+          <p class="p1">Publicado el: 5 de Septiembre, 2024</p>
+          <p class="p2">Fecha de Seminario: Miércoles 2 de Octubre <br> Horario: 14:00 a 17:00</p>
+          <p class="p3">Participa en este seminario online, en el cual nuestro querido profesor <strong>Esteban Zavala</strong>
+            perteneciente a la sede Puerto Montt dirigirá esta charla en donde ahondará en las principales
+            tendencias que dominan el mercado actual en la ciencia de datos y las tecnologías más cotizadas
+            dentro de este.
+          </p>
+        </ion-card-content>
+        <div class="actimg">
+          <ion-img src="assets/data_science.jpeg"></ion-img>
+        </div>
+        <ion-button (click)="sem1()" fill="solid" shape="round" class="bpart">
+          Participar
+        </ion-button>
+    </ion-card>
+  </div>
+  <div>
+    <ion-card class="eve">
+      <ion-card-title class="titact"> 3° Encuentro de Mujeres en Tecnologia e Innovación</ion-card-title>
+        <ion-card-content>
+          <p class="p1">Publicado el: 12 de Agosto, 2024</p>
+          <p class="p2">Fecha de Evento: Jueves 20 de Marzo 2025, Sede Antonio Varas <br> Horario: 14:00 a 17:00</p>
+          <p class="p3">Nos complace invitar a los estudiantes de la sede Maipú a este encuentro organizado
+            por la escuela de Ingeniería de Informática y Telecomunicaciones, este evento busca visibilizar
+            el rol y liderazgo de la mujer en áreas como la tecnología, informática, e industria robótica.  </p>
+        </ion-card-content>
+        <div class="actimg">
+          <ion-img src="assets/fem_info.jpeg"></ion-img>
+        </div>
+        <ion-button (click)="eve1()" fill="solid" shape="round" class="bpart">
+          Participar
+        </ion-button>
+    </ion-card>
+  </div>
+  <div>
+    <ion-card class="tall">
+      <ion-card-title class="titact">Financiamiento en las carreras de nuestra sede, cuáles son tus alternativas?</ion-card-title>
+        <ion-card-content>
+          <p class="p1">Publicado el: 20 de Agosto, 2024</p>
+          <p class="p2">Fecha de Taller: Martes 15 de Octubre, Sede Antonio Varas <br> Horario: 10:00 a 15:00</p>
+          <p class="p3">En este taller procuraremos dar alternativas a los estudiantes para que puedan financiar
+          correctamente sus estudios, profundizamos en el relleno del FUAS así como también establecemos alternativas
+          y repactaciones en el pago del arancel.
+          </p>
+        </ion-card-content>
+        <div class="actimg">
+          <ion-img src="assets/fina_carr.avif"></ion-img>
+        </div>
+        <ion-button (click)="tall1()" fill="solid" shape="round" class="bpart">
+          Participar
+        </ion-button>
+    </ion-card>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Torchline © 2024</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+

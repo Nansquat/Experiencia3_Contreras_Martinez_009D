@@ -1,0 +1,79 @@
+{
+    "usuarios":[
+    {
+        "id":"1",
+        "username":"hodwy123",
+        "password":"powder1234",
+        "correo":"gatohick@mail.com",
+        "fechanac":"12-02-1999"
+    },
+    {
+        "id":"2",
+        "username":"julepe",
+        "password":"pestos12",
+        "correo":"perros@mail.com",
+        "fechanac":"22-07-1991"
+    },
+    {
+        "id":"3",
+        "username":"sacramento",
+        "password":"hola1234",
+        "correo":"caninos@mail.com",
+        "fechanac":"12-02-1989"
+    },
+    {
+        "id":"4",
+        "username":"levantapolvo",
+        "password":"desierto345",
+        "correo":"gatoverde@mail.com",
+        "fechanac":"12-02-1996"
+    }
+    ],
+    "actividades":[
+        {
+            "id":"1",
+            "titact":"Actividad: Torneo de cartas Mito",
+            "publ":"Publicado el: 29 de Agosto, 2024",
+            "fechact":"Fecha de Actividad: Miércoles 25 de Septiembre",
+            "hora":"Horario: 9:00 a 17:00",
+            "desc":"Únete a esta entretenida actividad si te sientes capaz de medirte con los mejores jugadores de la escuela, siempre y cuando tengas una cuenta en nuestra plataforma  podrás participar (cupos limitados).",
+            "img": "https://ibb.co/7yM0nG9"
+        },
+        {
+            "id":"2",
+            "titact":"Actividad: Pruebas físicas",
+            "publ":"Publicado el: 2 de Septiembre, 2024",
+            "fechact":"Fecha de Actividad: Lunes 23 de Septiembre",
+            "hora":"Horario: 10:00 a 14:00",
+            "desc":"Anímate en esta actividad que probará tus capacidades físicas por medio de estaciones de ejercicios, cada estación contendrá un tiempo límite y habrán premios, desde mouse gamers hasta suplementos de ejercicio. Prueba que no perteneces al común denominador informático!.",
+            "img": "https://ibb.co/F6GRGkN"
+        },
+        {
+            "id":"3",
+            "titact":"Seminario: Charla online Ciencia de Datos, Estadísticas e Influencia en el mercado",
+            "publ":"Publicado el: 5 de Septiembre, 2024",
+            "fechact":"Fecha de Seminario: Miércoles 2 de Octubre",
+            "hora":"Horario: 14:00 a 17:00",
+            "desc":"Participa en este seminario online, en el cual nuestro querido profesor Esteban Zavala perteneciente a la sede Puerto Montt dirigirá esta charla en donde ahondará en las principales tendencias que dominan el mercado actual en la ciencia de datos y las tecnologías más cotizadas dentro de este.",
+            "img": "https://ibb.co/5xhC1yL"
+        },
+        {
+            "id":"4",
+            "titact":"3° Encuentro de Mujeres en Tecnologia e Innovación",
+            "publ":"Publicado el: 12 de Agosto, 2024",
+            "fechact":"Fecha de Evento: Jueves 20 de Marzo 2025, Sede Antonio Varas",
+            "hora":"Horario: 14:00 a 17:00",
+            "desc":"Nos complace invitar a los estudiantes de la sede Maipú a este encuentro organizado por la escuela de Ingeniería de Informática y Telecomunicaciones, este evento busca visibilizar el rol y liderazgo de la mujer en áreas como la tecnología, informática, e industria robótica.",
+            "img": "https://ibb.co/0D0DPHD"
+        },
+        {
+            "id":"5",
+            "titact":"Financiamiento en las carreras de nuestra sede, cuáles son tus alternativas?",
+            "publ":"Publicado el: 20 de Agosto, 2024",
+            "fechact":"Fecha de Taller: Martes 15 de Octubre, Sede Antonio Varas",
+            "hora":"Horario: 10:00 a 15:00",
+            "desc":"En este taller procuraremos dar alternativas a los estudiantes para que puedan financiar correctamente sus estudios, profundizamos en el relleno del FUAS así como también establecemos alternativas y repactaciones en el pago del arancel.",
+            "img": "https://ibb.co/BB7yk3W"
+        }
+    ]
+}
