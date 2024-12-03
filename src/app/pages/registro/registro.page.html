@@ -1,0 +1,93 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button
+        defaultHref="/"
+        text=""
+        color="danger">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title id="registro">Registro de Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="contentregistro">
+  <ion-card class="cartaregistro">
+    <ion-card-title class="ictitle">Registrar nuevo usuario</ion-card-title>
+      <ion-card-content>
+        <form [formGroup]="registroForm">
+          <ion-item><!--username-->
+            <ion-input type="text" placeholder="usuario" formControlName="username"
+            label="Username: " labelPlacement="floating"></ion-input>
+          </ion-item>
+            <div id="alerta" *ngIf="registroForm.get('username')?.invalid && (registroForm.get('username')?.dirty ||
+                              registroForm.get('username')?.touched)">      
+              <div id="alerta" *ngIf="registroForm.get('username')?.hasError('required')">
+                *Username es obligatorio
+              </div>
+              <div id="alerta" *ngIf="registroForm.get('username')?.hasError('minlength')">
+                *Username debe tener mínimo 6 caracteres
+              </div>
+            </div>
+            <ion-item><!--password-->
+              <ion-input type="password" formControlName="password"
+              label="Password: " labelPlacement="floating"></ion-input>
+            </ion-item>
+              <div id="alerta" *ngIf="registroForm.get('password')?.invalid && (registroForm.get('password')?.dirty ||
+                                registroForm.get('password')?.touched)">      
+                <div id="alerta" *ngIf="registroForm.get('username')?.hasError('required')">
+                  *Password es obligatorio
+                </div>
+                <div id="alerta" *ngIf="registroForm.get('username')?.hasError('minlength')">
+                  *Password debe tener mínimo 8 caracteres, una letra y un número
+                </div>
+              </div>
+              <ion-item><!--email-->
+                <ion-input type="email" formControlName="correo"
+                label="Email: " labelPlacement="floating"></ion-input>
+              </ion-item>
+                <div id="alerta" *ngIf="registroForm.get('email')?.invalid && (registroForm.get('email')?.dirty ||
+                                  registroForm.get('email')?.touched)">      
+                  <div id="alerta" *ngIf="registroForm.get('email')?.hasError('required')">
+                    *Email es obligatorio
+                  </div>
+                  <div id="alerta" *ngIf="registroForm.get('email')?.hasError('email')">
+                    *Formato no válido
+                  </div>
+                </div>
+                <ion-item><!--fecha de nacimiento-->
+                  <ion-input type="date" formControlName="fechanac"
+                  label="Date" labelPlacement="floating"></ion-input>
+                </ion-item>
+                  <div id="alerta" *ngIf="registroForm.get('date')?.invalid && (registroForm.get('date')?.dirty ||
+                                    registroForm.get('date')?.touched)">      
+                    <div id="alerta" *ngIf="registroForm.get('date')?.hasError('required')">
+                      *Fecha de nacimiento es obligatoria
+                    </div>
+                    <div id="alerta" *ngIf="registroForm.get('username')?.hasError('date')">
+                      *Fecha de nacimiento no válida
+                    </div>
+                  </div>
+        </form>
+      </ion-card-content>
+      <div style="text-align: center; margin-top: 20px;">
+        <ion-button class="crearUsuario()" [disabled]="!registroForm.valid" shape="round">Registrar Usuario</ion-button>
+      </div>  
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Torchrelay © 2024</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
